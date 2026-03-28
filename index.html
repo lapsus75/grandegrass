@@ -3,24 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>grandegrass.com</title>
-
 <style>
     body {
+        margin: 0;
+        height: 100vh;
         background-color: black;
         color: #00ff00;
         font-family: "Courier New", monospace;
-        margin: 0;
-        height: 100vh;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    .terminal {
-        text-align: center;
-        white-space: pre;
-        font-size: 14px;
-        line-height: 1.2;
+    h1 {
+        font-size: 4em;
+        margin: 0;
+        letter-spacing: 0.1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 0.2em 0 1em 0;
+        color: #00cc00;
     }
 
     .cursor {
@@ -34,25 +39,23 @@
     @keyframes blink {
         50% { background-color: transparent; }
     }
+
+    .terminal-box {
+        text-align: center;
+        border: 2px solid #00ff00;
+        padding: 2em;
+        box-shadow: 0 0 20px #00ff00;
+    }
 </style>
 </head>
-
 <body>
 
-<div class="terminal">
-  ____                                ____                     
- / ___|  __ _ _ __ ___   ___  ___    / ___|_ __ __ _ ___ ___  
-| |  _  / _` | '_ ` _ \ / _ \/ __|  | |  _| '__/ _` / __/ __| 
-| |_| | (_| | | | | | |  __/\__ \  | |_| | | | (_| \__ \__ \ 
- \____| \__,_|_| |_| |_|\___||___/   \____|_|  \__,_|___/___/ 
-                                                             
-                 .com
-
---------------------------------------------------------------
-
-> accesso al sistema...
-
-<span class="cursor"></span>
+<div class="terminal-box">
+    <h1>GRASS</h1>
+    <h2>grandegrass.com</h2>
+    <div>
+        > accesso al sistema<span class="cursor"></span>
+    </div>
 </div>
 
 </body>
