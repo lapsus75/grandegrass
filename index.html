@@ -13,28 +13,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+    }
 
-
-    a, a:visited {
-        color: #00ff00;
-        text-decoration: none;
-}
-
-    a:hover, a:active {
-        color: #66ff66;
-        text-decoration: underline;
-}
     h1 {
         font-size: 4em;
         margin: 0;
         letter-spacing: 0.1em;
+        text-align: center;
     }
 
     h2 {
         font-size: 1.5em;
         margin: 0.2em 0 1em 0;
         color: #00cc00;
+        text-align: center;
+    }
+
+    .terminal-box {
+        border: 2px solid #00ff00;
+        padding: 2em;
+        box-shadow: 0 0 20px #00ff00;
+        width: 500px;
+    }
+
+    .terminal-line {
+        text-align: left;
+        margin-top: 15px;
     }
 
     .cursor {
@@ -49,26 +53,31 @@
         50% { background-color: transparent; }
     }
 
-    .terminal-box {
-        text-align: center;
-        border: 2px solid #00ff00;
-        padding: 2em;
-        box-shadow: 0 0 20px #00ff00;
+    a {
+        color: #00ff00;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #66ff66;
+        text-decoration: underline;
     }
 </style>
 </head>
+
 <body>
 
 <div class="terminal-box">
     <h1>G#G</h1>
     <h2>grandegrass.com</h2>
-    <div>
-        > accesso al sistema non consentito<span class="cursor"></span>
+
+    <div class="terminal-line">
+        > system access not permitted<span class="cursor"></span>
     </div>
-     <div class="command">
-        > <a href="https://www.comune.re.it" target="_self">exit now!</a>
+
+    <div class="terminal-line">
+        > <a href="https://www.comune.re.it" target="_self">Exit. NOW!</a>
     </div>
-</div>
 </div>
 
 </body>
